@@ -57,7 +57,7 @@ function slideshowSwitch(slideshow,index,auto){
       var newSlideRight='';
       var newSlideLeft=0;
       var newSlideImageRight='auto';
-      var newSlideImageLeft=-slideshow.width()/8;
+      var newSlideImageLeft=-slideshow.width()/12;
       var newSlideImageToRight='';
       var newSlideImageToLeft=0;
       var newSlideContentLeft=0;
