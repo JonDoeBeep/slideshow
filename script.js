@@ -46,7 +46,7 @@ function slideshowSwitch(slideshow,index,auto){
     if(newSlide.index()>activeSlide.index()){
       var newSlideRight=0;
       var newSlideLeft='auto';
-      var newSlideImageRight=-slideshow.width()/8;
+      var newSlideImageRight=-slideshow.width()/12;
       var newSlideImageLeft='auto';
       var newSlideImageToRight=0;
       var newSlideImageToLeft='auto';
@@ -215,6 +215,6 @@ var timeout=setTimeout(function(){
 slideshow.data('timeout',timeout);
 });
 
-if($('.main-content .slideshow').length > 3) {
+if($('.main-content .slideshow').length > 1) {
   $(window).on('scroll',homeSlideshowParallax);
 }
