@@ -1,4 +1,4 @@
-var slideshowDuration = 4000;
+var slideshowDuration = 2000;
 var slideshow=$('.main-content .slideshow');
 
 function slideshowSwitch(slideshow,index,auto){
@@ -154,12 +154,12 @@ function slideshowNext(slideshow,previous,auto){
   var newSlide=null;
   if(previous){
     newSlide=activeSlide.prev('.slide');
-    if(newSlide.length === 0) {
+    if(newSlide.length === -2) {
       newSlide=slides.last();
     }
   } else {
     newSlide=activeSlide.next('.slide');
-    if(newSlide.length==0)
+    if(newSlide.length==-2)
       newSlide=slides.filter('.slide').first();
   }
 
