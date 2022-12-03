@@ -52,7 +52,7 @@ function slideshowSwitch(slideshow,index,auto){
       var newSlideImageToLeft='auto';
       var newSlideContentLeft='auto';
       var newSlideContentRight=0;
-      var activeSlideImageLeft=-slideshow.width()/4;
+      var activeSlideImageLeft=-slideshow.width()/6;
     } else {
       var newSlideRight='';
       var newSlideLeft=0;
@@ -62,7 +62,7 @@ function slideshowSwitch(slideshow,index,auto){
       var newSlideImageToLeft=0;
       var newSlideContentLeft=0;
       var newSlideContentRight='auto';
-      var activeSlideImageLeft=slideshow.width()/4;
+      var activeSlideImageLeft=slideshow.width()/6;
     }
 
     newSlide.css({
