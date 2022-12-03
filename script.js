@@ -154,12 +154,12 @@ function slideshowNext(slideshow,previous,auto){
   var newSlide=null;
   if(previous){
     newSlide=activeSlide.prev('.slide');
-    if(newSlide.length === -2) {
+    if(newSlide.length === 0) {
       newSlide=slides.last();
     }
   } else {
     newSlide=activeSlide.next('.slide');
-    if(newSlide.length==-2)
+    if(newSlide.length==0)
       newSlide=slides.filter('.slide').first();
   }
 
@@ -215,6 +215,6 @@ var timeout=setTimeout(function(){
 slideshow.data('timeout',timeout);
 });
 
-if($('.main-content .slideshow').length > 1) {
+if($('.main-content .slideshow').length > 3) {
   $(window).on('scroll',homeSlideshowParallax);
 }
